@@ -1,0 +1,44 @@
+{
+  "name": "bdougherty",
+  "version": "1.0.0",
+  "description": "A personal card for Brad Dougherty (@bdougherty)",
+  "main": "bin/card.js",
+  "bin": {
+    "bdougherty": "bin/card.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bdougherty/bdougherty.git"
+  },
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "node build.js",
+    "dev": "npm run build && node ./bin/card.js",
+    "test": "xo"
+  },
+  "keywords": [
+    "card",
+    "npm",
+    "npm card",
+    "npx",
+    "npx card",
+    "business card"
+  ],
+  "author": "Brad Dougherty <me@brad.is>",
+  "license": "MIT",
+  "files": [
+    "bin/card.js",
+    "bin/output"
+  ],
+  "devDependencies": {
+    "boxen": "^2.1.0",
+    "chalk": "^2.4.1",
+    "eslint-config-bdougherty": "^5.1.1",
+    "string-width": "^3.0.0",
+    "widest-line": "^2.0.1",
+    "xo": "^0.23.0"
+  },
+  "xo": {
+    "extends": "bdougherty"
+  }
+}
