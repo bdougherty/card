@@ -7,6 +7,7 @@ const chalk = require('chalk');
 const stringWidth = require('string-width');
 const widestLine = require('widest-line');
 const config = require('./config.json');
+const pkg = require('./package.json');
 
 const boxenOptions = {
 	padding: 1,
@@ -14,8 +15,8 @@ const boxenOptions = {
 	borderStyle: 'round'
 };
 
-const packageName = process.env.npm_package_name;
-const packageAuthor = process.env.npm_package_author_name;
+const packageName = pkg.name;
+const packageAuthor = pkg.author.name;
 
 const services = {
 	github: {
