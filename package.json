@@ -24,7 +24,10 @@
     "npx card",
     "business card"
   ],
-  "author": "Brad Dougherty <me@brad.is>",
+  "author": {
+    "name": "Brad Dougherty",
+    "email": "me@brad.is"
+  },
   "license": "MIT",
   "files": [
     "bin/card.js",
