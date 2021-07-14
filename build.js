@@ -31,6 +31,10 @@ const services = {
 		prefix: 'https://linkedin.com/in/',
 		color: 'blue'
 	},
+	vimeo: {
+		prefix: 'https://vimeo.com/',
+		color: 'blue'
+	},
 	npm: {
 		prefix: 'https://www.npmjs.com/',
 		color: 'red'
